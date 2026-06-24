@@ -172,6 +172,8 @@ FileSystem
 | **↑**（上箭头） | 开始 HLAE 录制 + 恢复 Demo 播放，打印通道与帧率 |
 | **↓**（下箭头） | 暂停 Demo + 结束 HLAE 录制 |
 
+> ✅ 本配置仅绑定 `↑` 和 `↓` 两个按键，**不会覆盖**你已有的个人按键设置。
+
 ## 🔧 HLAE 录制参数（hlae.cfg）
 
 | 参数 | 值 | 说明 |
@@ -182,6 +184,18 @@ FileSystem
 | 运动镜头 | 开启 | `mirv_campath enabled 1` |
 | ReShade | 开启 | `mirv_reshade enabled 1` |
 | 录制通道 | raw + depth | 原始层 + 深度层 |
+
+### 📡 雷达设置
+
+已配置以下参数，**确保第一人称视角下雷达保持圆形**，避免被游戏默认方形雷达影响：
+
+| 参数 | 值 | 说明 |
+|------|-----|------|
+| `cl_radar_scale_dynamic` | `0` | 关闭动态缩放 |
+| `cl_radar_square_always` | `0` | 始终不强制方形雷达 |
+| `cl_radar_square_when_spectating` | `0` | 观战时也不启用方形雷达 |
+| `cl_radar_scale` | `0.35` | 雷达缩放比例 |
+| `cl_radar_icon_scale_min` | `0.4` | 图标最小缩放 |
 
 ## ⚠️ 注意事项
 
